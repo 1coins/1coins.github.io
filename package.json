@@ -1,0 +1,31 @@
+{
+  "name": "1coins-blog",
+  "version": "1.4.0",
+  "description": "乾元的个人博客",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "vuepress build src",
+    "dev": "vuepress dev src --clean-cache",
+    "preview": "go run ./shell/main.go",
+    "update": "pnpm dlx vp-update",
+    "deploy-blog": "bash ./shell/deploy-blog.sh",
+    "sync-blog": "bash ./shell/sync-blog.sh",
+    "deploy-git": "bash ./shell/deploy-git.sh",
+    "sync-git": "bash ./shell/sync-git.sh"
+  },
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.66",
+    "aplayer": "^1.10.1",
+    "axios": "^1.4.0",
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-hope": "2.0.0-beta.235"
+  },
+  "dependencies": {
+    "@types/store": "^2.0.2",
+    "store": "^2.0.12",
+    "vue-router": "^4.2.4",
+    "vuepress-plugin-search-pro": "2.0.0-beta.235"
+  }
+}
